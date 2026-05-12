@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A difficulty curve running backwards — Sritej Canchi</title>
+<script>
+(function(){try{var t=localStorage.getItem('sc-theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter+Tight:wght@400;450;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=3">
+<link rel="stylesheet" href="case-styles.css?v=3">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__brand"><span class="nav__dot"></span>Sritej Canchi</a>
+    <div class="nav__links">
+      <a href="../index.html#shipped" class="nav__hide-sm">Shipped</a>
+      <a href="../index.html#cases">Case Studies</a>
+      <a href="../index.html#expertise" class="nav__hide-sm">Expertise</a>
+      <a href="../index.html#contact">Contact</a>
+      <button class="nav__theme" aria-label="Toggle theme" onclick="toggleTheme()">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ==================== SECTION TRACKER ==================== -->
+<aside class="tracker" aria-label="Section tracker">
+  <a href="#top" class="tracker__item is-active" data-target="top">
+    <span class="tracker__tick"></span>
+    <span class="tracker__label">Overview</span>
+  </a>
+  <a href="#context" class="tracker__item" data-target="context">
+    <span class="tracker__tick"></span>
+    <span class="tracker__label">Context</span>
+  </a>
+  <a href="#method" class="tracker__item" data-target="method">
+    <span class="tracker__tick"></span>
+    <span class="tracker__label">Method</span>
+  </a>
+  <a href="#insight" class="tracker__item" data-target="insight">
+    <span class="tracker__tick"></span>
+    <span class="tracker__label">Insight</span>
+  </a>
+  <a href="#outcome" class="tracker__item" data-target="outcome">
+    <span class="tracker__tick"></span>
+    <span class="tracker__label">Outcome</span>
+  </a>
+</aside>
+
+<header id="top" class="case-hero" data-track-section>
+  <div class="wrap wrap--narrow">
+    <a href="../index.html#cases" class="case-hero__back">← All case studies</a>
+    <div class="case-hero__num">N° 03 — Case study</div>
+    <div class="case-hero__tag">Battlefield Mobile · Progression sequencing</div>
+    <h1>A difficulty curve running backwards</h1>
+    <p class="case-hero__lede">Weapon tuning looked fine in isolation. The signal was in the sequencing.</p>
+    <div class="case-hero__meta">
+      <div class="case-hero__meta-item">Studio<strong>EA · Industrial Toys</strong></div>
+      <div class="case-hero__meta-item">Role<strong>Player analyst · progression</strong></div>
+      <div class="case-hero__meta-item">Scope<strong>FTUE → Lvl 50</strong></div>
+      <div class="case-hero__meta-item">Outcome<strong>Unlock order restructured</strong></div>
+    </div>
+  </div>
+</header>
+
+<main class="case-body">
+  <div class="wrap wrap--narrow">
+
+    <div id="context" class="grid-2 case-section" data-track-section>
+      <div>
+        <div class="case-label">Context</div>
+        <div class="case-prose">
+          <p>Battlefield Mobile, post-FTUE. I was driving qualitative analysis on player progression from FTUE through Lvl 50 — unlocks, rewards, pacing — alongside the weekly longitudinal playtests and the FTUE funnel work.</p>
+        </div>
+      </div>
+      <div>
+        <div class="case-label">Signal</div>
+        <div class="case-prose">
+          <p>Performance dips kept clustering around the level gates where new weapons unlocked. Not a few points of soft churn — measurable dropoff right after the unlock, recovering a level or two later. Weapon tuning reviewed in isolation looked fine. Each weapon performed inside its target band.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="figure">
+      <svg viewBox="0 0 640 210" xmlns="http://www.w3.org/2000/svg">
+        <text font-size="12" font-weight="500" fill="var(--ink)" x="30" y="16">Session length by player level, with weapon unlock gates</text>
+        <text font-size="10" fill="var(--ink-3)" x="30" y="30">Dips landed at the gates, not between them.</text>
+
+        <line x1="60" y1="180" x2="610" y2="180" stroke="var(--rule)" stroke-width="0.75"/>
+        <line x1="60" y1="60" x2="60" y2="180" stroke="var(--rule)" stroke-width="0.75"/>
+        <text font-size="9.5" fill="var(--ink-4)" x="52" y="184" text-anchor="end">low</text>
+        <text font-size="9.5" fill="var(--ink-4)" x="52" y="65" text-anchor="end">high</text>
+        <text font-size="9.5" fill="var(--ink-4)" x="30" y="125" text-anchor="middle" transform="rotate(-90 30 125)">Avg session length</text>
+
+        <!-- unlock gate markers -->
+        <line x1="170" y1="60" x2="170" y2="180" stroke="var(--terracotta)" stroke-width="0.75" stroke-dasharray="3 3" stroke-opacity="0.7"/>
+        <line x1="290" y1="60" x2="290" y2="180" stroke="var(--terracotta)" stroke-width="0.75" stroke-dasharray="3 3" stroke-opacity="0.7"/>
+        <line x1="410" y1="60" x2="410" y2="180" stroke="var(--terracotta)" stroke-width="0.75" stroke-dasharray="3 3" stroke-opacity="0.7"/>
+        <line x1="530" y1="60" x2="530" y2="180" stroke="var(--terracotta)" stroke-width="0.75" stroke-dasharray="3 3" stroke-opacity="0.7"/>
+
+        <text font-size="9" fill="var(--terracotta-2)" x="170" y="52" text-anchor="middle">unlock</text>
+        <text font-size="9" fill="var(--terracotta-2)" x="290" y="52" text-anchor="middle">unlock</text>
+        <text font-size="9" fill="var(--terracotta-2)" x="410" y="52" text-anchor="middle">unlock</text>
+        <text font-size="9" fill="var(--terracotta-2)" x="530" y="52" text-anchor="middle">unlock</text>
+
+        <!-- session length curve: peaks between, dips at each unlock -->
+        <path d="M 80 95 L 110 80 L 140 78 L 170 128 L 200 108 L 235 92 L 265 88 L 290 140 L 320 118 L 355 100 L 385 95 L 410 148 L 440 125 L 470 110 L 500 105 L 530 155 L 560 132 L 590 118" fill="none" stroke="var(--ink-2)" stroke-width="1.75" stroke-linejoin="round"/>
+
+        <circle cx="170" cy="128" r="3" fill="var(--terracotta)"/>
+        <circle cx="290" cy="140" r="3" fill="var(--terracotta)"/>
+        <circle cx="410" cy="148" r="3" fill="var(--terracotta)"/>
+        <circle cx="530" cy="155" r="3" fill="var(--terracotta)"/>
+
+        <text font-size="9.5" fill="var(--ink-4)" x="80" y="196">Lvl 5</text>
+        <text font-size="9.5" fill="var(--ink-4)" x="170" y="196" text-anchor="middle">Lvl 12</text>
+        <text font-size="9.5" fill="var(--ink-4)" x="290" y="196" text-anchor="middle">Lvl 22</text>
+        <text font-size="9.5" fill="var(--ink-4)" x="410" y="196" text-anchor="middle">Lvl 32</text>
+        <text font-size="9.5" fill="var(--ink-4)" x="530" y="196" text-anchor="middle">Lvl 42</text>
+      </svg>
+      <div class="figure__caption">Fig 1 — Session length recovered between gates and dropped at each unlock. The gates, not the weapons, were the signal.</div>
+    </div>
+
+    <div id="method" class="case-section" data-track-section>
+      <div class="case-label">Method</div>
+      <div class="case-prose">
+        <p>I stopped looking at weapons one at a time and started looking at <strong>the delta between adjacent unlocks</strong>. For each gate, I paired the telemetry dip with longitudinal playtest notes from players who had just crossed it: what they had just been using, what they unlocked, how it felt relative to the weapon it replaced.</p>
+        <p>The pattern was consistent. At several gates, the freshly unlocked weapon required a different playstyle than the one players had spent the previous ten levels mastering — close-range to mid-range, ADS-dominant to hip-fire, single-target to area. Each weapon was balanced. The <em>transition</em> was not. Players who had just internalized a weapon were being asked to re-learn combat at the exact moment the game was signaling progress.</p>
+      </div>
+    </div>
+
+    <div id="insight" class="case-section" data-track-section>
+      <div class="case-label">Insight</div>
+      <div class="pullquote">Progression had been designed weapon by weapon. Players experienced it gap by gap.</div>
+      <div class="case-prose">
+        <p>The difficulty curve wasn't running forwards with occasional spikes. At the gates, it was running backwards: skill acquired at Lvl N was partially obsolete at Lvl N+1. That's why tuning each weapon harder or softer never fixed the dip — the dip was in the <strong>seam</strong>, not the node.</p>
+      </div>
+    </div>
+
+    <div id="outcome" class="case-section" data-track-section>
+      <div class="case-label">Action &amp; outcome</div>
+      <ol class="beats">
+        <li>Reframed the review from per-weapon balance to <strong>unlock-sequence balance</strong>, with telemetry dips mapped against playstyle deltas at each gate.</li>
+        <li>Partnered with design and PM to restructure unlock ordering: weapons that reinforced the previous playstyle moved earlier in the sequence, and high-delta weapons were paired with <strong>transitional unlocks</strong> — attachments, modes, or mechanics that bridged one playstyle to the next.</li>
+        <li>The sequencing shipped into the progression funnel work. Combined with the FTUE changes, the full progression stack <strong>improved completion rate through the early-to-mid level band</strong> and flattened the dip at the restructured gates.</li>
+      </ol>
+    </div>
+
+    <div class="callout">
+      <div class="callout__label">What this reinforced</div>
+      <div class="callout__body">When a signal keeps clustering, the explanation is probably one level of abstraction higher than where you're looking. <strong>The gates were signal. The weapons were noise.</strong></div>
+    </div>
+
+  </div>
+</main>
+
+<nav class="case-nav">
+  <div class="wrap wrap--narrow">
+    <div class="case-nav__grid">
+      <a href="tomb-raider-cultural.html" class="case-nav__link case-nav__link--prev">
+        <div class="case-nav__dir">← Previous case</div>
+        <div class="case-nav__title">Cultural risk analysis as a milestone-cadence practice</div>
+      </a>
+      <a href="tomb-raider-qx.html" class="case-nav__link case-nav__link--next">
+        <div class="case-nav__dir">Next case →</div>
+        <div class="case-nav__title">QX Scale transfer: structured vendor feedback that upgraded milestone decisions</div>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<footer class="footer">
+  <div class="wrap" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; width:100%;">
+    <div>© <span id="year"></span> Sritej Canchi</div>
+    <div><a href="../index.html">← Back to portfolio</a></div>
+  </div>
+</footer>
+
+<script>
+function toggleTheme(){var c=document.documentElement.getAttribute('data-theme');var n=c==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('sc-theme',n);}catch(e){}}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
