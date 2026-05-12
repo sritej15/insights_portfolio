@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sritej Canchi — Player Insights, Quality & Game Production</title>
+<meta name="description" content="Sritej Canchi. 8+ years at Amazon Games and Electronic Arts designing gameplay tests, identifying patterns in player behavior, and turning findings into clear insights that shape product decisions.">
+
+<!-- Prevent theme flash -->
+<script>
+(function(){
+  try {
+    var t = localStorage.getItem('sc-theme');
+    if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  } catch(e){ document.documentElement.setAttribute('data-theme', 'light'); }
+})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter+Tight:wght@400;450;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+
+<!-- ==================== NAV ==================== -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand"><span class="nav__dot"></span>Sritej Canchi</a>
+    <div class="nav__links">
+      <a href="#shipped" class="nav__hide-sm">Shipped</a>
+      <a href="#cases">Case Studies</a>
+      <a href="#expertise" class="nav__hide-sm">Expertise</a>
+      <a href="#about" class="nav__hide-sm">About</a>
+      <a href="#contact">Contact</a>
+      <button class="nav__theme" aria-label="Toggle theme" onclick="toggleTheme()">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ==================== SECTION TRACKER ==================== -->
+<aside class="tracker" aria-label="Section tracker">
+  <a href="#top" class="tracker__item is-active" data-target="top">
+    <span class="tracker__tick"></span>
+    <span class="tracker__label">Intro</span>
+  </a>
+  <a href="#shipped" class="tracker__item" data-target="shipped">
+    <span class="tracker__tick"></span>
+    <span class="tracker__label">Shipped</span>
+  </a>
+  <a href="#cases" class="tracker__item" data-target="cases">
+    <span class="tracker__tick"></span>
+    <span class="tracker__label">Case Studies</span>
+  </a>
+  <a href="#expertise" class="tracker__item" data-target="expertise">
+    <span class="tracker__tick"></span>
+    <span class="tracker__label">Expertise</span>
+  </a>
+  <a href="#about" class="tracker__item" data-target="about">
+    <span class="tracker__tick"></span>
+    <span class="tracker__label">About</span>
+  </a>
+  <a href="#contact" class="tracker__item" data-target="contact">
+    <span class="tracker__tick"></span>
+    <span class="tracker__label">Contact</span>
+  </a>
+</aside>
+
+<!-- ==================== HERO ==================== -->
+<header id="top" class="hero">
+  <!-- ornamental serif "S" mark -->
+  <svg class="hero__mark" viewBox="0 0 200 200" aria-hidden="true">
+    <g fill="currentColor" style="color:var(--accent)">
+      <rect x="28" y="40" width="10" height="120"/>
+      <rect x="52" y="40" width="10" height="68"/>
+      <rect x="120" y="40" width="52" height="10"/>
+      <rect x="120" y="150" width="52" height="10"/>
+      <rect x="120" y="40" width="10" height="120"/>
+      <circle cx="100" cy="175" r="6"/>
+    </g>
+  </svg>
+  <div class="wrap hero__inner">
+    <div class="eyebrow hero__eyebrow">Product / Gameplay Analysis · Player Insights · Product Quality · Game Production</div>
+    <h1 class="display-xl">Representing the player <em>from inside the build</em>.</h1>
+    <p class="lede hero__lede">
+      8+ years at <strong>Amazon Games</strong> and <strong>Electronic Arts</strong> designing gameplay tests,
+      identifying patterns in player behavior, and turning findings into clear insights that shape design,
+      product, and content decisions. I evaluate whether a weapon feels satisfying to fire, whether progression pacing holds players
+      or loses them, whether an onboarding flow teaches or frustrates. I work across playtesting, player analytics, and production,
+      partnering with designers, producers, and technical leads to ship games people want to keep playing.
+    </p>
+    <div class="hero__meta">
+      <span class="chip"><span class="chip__dot"></span>10+ years · 9 shipped titles</span>
+      <span class="chip chip--forest"><span class="chip__dot"></span>75+ studio playtests designed &amp; led</span>
+      <span class="chip chip--amber"><span class="chip__dot"></span>PC · Console · Mobile · Cloud · VR</span>
+      <span class="chip"><span class="chip__dot"></span>Master's in Game Production (UXR &amp; Design)</span>
+      <span class="chip chip--forest"><span class="chip__dot"></span>CSM · ISTQB · Six Sigma</span>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== SHIPPED ==================== -->
+<section id="shipped" class="shipped">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-head__label">
+        <span class="eyebrow">Shipped</span>
+        <span class="counter">01 / 05</span>
+      </div>
+      <div class="sec-head__body">
+        <h2 class="display-lg">Nine titles across AAA, live service, mobile, and indie.</h2>
+        <p class="body-lg">From pre-production to launch and live ops. Global concurrent user counts where public.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="marquee reveal">
+    <div class="marquee__track" id="marqueeTrack">
+      <!-- Set A -->
+      <div class="title-card"><div class="title-card__name">Tomb Raider <em>· Legacy of Atlantis, Catalyst</em></div><div class="title-card__meta">Amazon Games · In development</div></div>
+      <div class="title-card"><div class="title-card__name">Lost Ark</div><div class="title-card__meta">Amazon Games · Live service · 1.3M+ CCU</div></div>
+      <div class="title-card"><div class="title-card__name">New World</div><div class="title-card__meta">Amazon Games · OBT &amp; Launch · 913K+ CCU</div></div>
+      <div class="title-card"><div class="title-card__name">Throne &amp; Liberty</div><div class="title-card__meta">Amazon Games · OBT &amp; Launch · 330K+ CCU</div></div>
+      <div class="title-card"><div class="title-card__name">King of Meat</div><div class="title-card__meta">Amazon Games · Ground-up to Alpha</div></div>
+      <div class="title-card"><div class="title-card__name">Battlefield Mobile</div><div class="title-card__meta">EA · Pre-prod to Open Beta</div></div>
+      <div class="title-card"><div class="title-card__name">Command &amp; Conquer <em>· Rivals</em></div><div class="title-card__meta">EA · Pre-prod to Soft Launch · iOS/Android</div></div>
+      <div class="title-card"><div class="title-card__name">The Sims <em>· FreePlay &amp; Mobile</em></div><div class="title-card__meta">EA · Live service · iOS/Android</div></div>
+      <div class="title-card"><div class="title-card__name">ArchiTac</div><div class="title-card__meta">Squish-Fish · Shipped to Steam · UE4</div></div>
+      <!-- Set B (duplicate for seamless loop) -->
+      <div class="title-card"><div class="title-card__name">Tomb Raider <em>· Legacy of Atlantis, Catalyst</em></div><div class="title-card__meta">Amazon Games · In development</div></div>
+      <div class="title-card"><div class="title-card__name">Lost Ark</div><div class="title-card__meta">Amazon Games · Live service · 1.3M+ CCU</div></div>
+      <div class="title-card"><div class="title-card__name">New World</div><div class="title-card__meta">Amazon Games · OBT &amp; Launch · 913K+ CCU</div></div>
+      <div class="title-card"><div class="title-card__name">Throne &amp; Liberty</div><div class="title-card__meta">Amazon Games · OBT &amp; Launch · 330K+ CCU</div></div>
+      <div class="title-card"><div class="title-card__name">King of Meat</div><div class="title-card__meta">Amazon Games · Ground-up to Alpha</div></div>
+      <div class="title-card"><div class="title-card__name">Battlefield Mobile</div><div class="title-card__meta">EA · Pre-prod to Open Beta</div></div>
+      <div class="title-card"><div class="title-card__name">Command &amp; Conquer <em>· Rivals</em></div><div class="title-card__meta">EA · Pre-prod to Soft Launch · iOS/Android</div></div>
+      <div class="title-card"><div class="title-card__name">The Sims <em>· FreePlay &amp; Mobile</em></div><div class="title-card__meta">EA · Live service · iOS/Android</div></div>
+      <div class="title-card"><div class="title-card__name">ArchiTac</div><div class="title-card__meta">Squish-Fish · Shipped to Steam · UE4</div></div>
+    </div>
+  </div>
+  <p class="shipped__note" style="margin-top: 32px;">Hover to pause ·  Scroll to keep reading</p>
+</section>
+
+<!-- ==================== CASE STUDIES ==================== -->
+<section id="cases">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-head__label">
+        <span class="eyebrow">Case Studies</span>
+        <span class="counter">02 / 05</span>
+      </div>
+      <div class="sec-head__body">
+        <h2 class="display-lg">Four investigations from inside the build.</h2>
+        <p class="body-lg">Four cases at AAA scale, spanning telemetry funnel analysis, longitudinal playtest synthesis, comparative research methodology, and quality-grading frameworks for external QA partners. Each follows a player signal past the obvious explanation and synthesizes qualitative and quantitative evidence into an insight that design, PM, and engineering acted on.</p>
+      </div>
+    </div>
+
+    <div class="cases reveal">
+
+      <a href="cases/battlefield-mobile-ftue.html" class="case-row">
+        <div class="case-row__num">N° 01</div>
+        <div class="case-row__body">
+          <div class="case-row__tag">Battlefield Mobile · FTUE redesign</div>
+          <div class="case-row__title">The FTUE checklist that shipped on paper but not in play</div>
+          <div class="case-row__hook">Three drop points across the first hour. Completion rate looked acceptable. Retention at each transition didn't.</div>
+        </div>
+        <div class="case-row__arrow">→</div>
+      </a>
+
+      <a href="cases/tomb-raider-cultural.html" class="case-row">
+        <div class="case-row__num">N° 02</div>
+        <div class="case-row__body">
+          <div class="case-row__tag">Tomb Raider · Cultural research methodology</div>
+          <div class="case-row__title">Cultural risk analysis as a milestone-cadence practice</div>
+          <div class="case-row__hook">A AAA title with global reach can't run cultural review on intuition. Building a repeatable methodology for routine concerns and deeper edge-case risks.</div>
+        </div>
+        <div class="case-row__arrow">→</div>
+      </a>
+
+      <a href="cases/battlefield-mobile-progression.html" class="case-row">
+        <div class="case-row__num">N° 03</div>
+        <div class="case-row__body">
+          <div class="case-row__tag">Battlefield Mobile · Progression sequencing</div>
+          <div class="case-row__title">A difficulty curve running backwards</div>
+          <div class="case-row__hook">Performance dips clustered at gates where new weapons unlocked. Weapon tuning looked fine in isolation. The signal was in the sequencing.</div>
+        </div>
+        <div class="case-row__arrow">→</div>
+      </a>
+
+      <a href="cases/tomb-raider-qx.html" class="case-row">
+        <div class="case-row__num">N° 04</div>
+        <div class="case-row__body">
+          <div class="case-row__tag">Tomb Raider · Vendor quality framework</div>
+          <div class="case-row__title">QX Scale transfer: structured vendor feedback that upgraded milestone acceptance decisions</div>
+          <div class="case-row__hook">Vendor reports of "combat feels off" can't be prioritized at milestone reviews. Transferring a quality-grading framework so external QA findings carried the same scope and gradient as internal ones.</div>
+        </div>
+        <div class="case-row__arrow">→</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== EXPERTISE ==================== -->
+<section id="expertise">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-head__label">
+        <span class="eyebrow">Expertise</span>
+        <span class="counter">03 / 05</span>
+      </div>
+      <div class="sec-head__body">
+        <h2 class="display-lg">Two pillars. The work sits where they meet.</h2>
+        <p class="body-lg">Evidence from Amazon Games, EA, GApp Lab, and Squish-Fish. Expand any card for methodology and depth.</p>
+      </div>
+    </div>
+
+    <div class="reveal" style="display:flex; justify-content:flex-start; margin-bottom: 36px;">
+      <div class="tabs" role="tablist">
+        <button class="tab is-active" data-pillar="quality" onclick="switchPillar('quality', this)" role="tab">Product Quality Analysis</button>
+        <button class="tab" data-pillar="production" onclick="switchPillar('production', this)" role="tab">Game Production</button>
+      </div>
+    </div>
+
+    <!-- PILLAR: QUALITY -->
+    <div id="pillar-quality" class="pillar is-active">
+      <div class="cap-grid">
+
+        <div class="cap reveal">
+          <div class="cap__top">
+            <h3>Player Insights &amp; Playtesting</h3>
+            <div class="cap__sub">Design gameplay tests, drive qualitative analysis, synthesize findings into insights that inform design and product decisions.</div>
+            <div class="cap__proof">
+              <div class="proof-line"><div class="proof-line__where">Amazon Games</div><div>Designed and led internal gameplay tests for <strong>Tomb Raider and King of Meat</strong>: defined test objectives and success criteria, moderated cross-functional sessions, wrote up findings for production and leadership. Drove deep <strong>weapon balance evaluation for Legacy of Atlantis and Catalyst</strong> across sandbox and main game levels, sharing detailed notes in milestone reports starting from the prototype phase.</div></div>
+              <div class="proof-line"><div class="proof-line__where">EA</div><div>Led <strong>weekly gameplay sessions with 30–40 participants</strong> including executives on Battlefield Mobile. Drove complex <strong>qualitative analysis for multiple weapon types</strong> (automatic, LMG, SMG, shotgun, pistol) evaluating firing rate, damage, reload time, hip-fire/ADS, scope, and attachments. Documented findings in a historical analysis spreadsheet used by design and PM teams to <strong>iterate balance changes quickly and scale back when needed</strong>.</div></div>
+              <div class="proof-line"><div class="proof-line__where">EA</div><div>Led qualitative analysis for <strong>Player Progression from FTUE to Lvl 50</strong> on Battlefield Mobile: evaluated unlocks, rewards, and pacing. Identified inconsistencies, stale data, and missing data <strong>early in the lifecycle, preventing blockers and show-stopper issues</strong> before they reached players.</div></div>
+              <div class="proof-line"><div class="proof-line__where">EA</div><div>Collaborated with <strong>UXR and Product Management</strong> to define target players, understand core demographics, expectations, and pain points. Built feedback tools: online questionnaires and a <strong>custom Slack plugin</strong> so feedback collection was consistent across sessions. Assisted longitudinal playtest participants to gather retention and difficulty progression data.</div></div>
+              <div class="proof-line"><div class="proof-line__where">GApp Lab</div><div>Designed and conducted <strong>50+ playtests with young adults on the autism spectrum</strong> (Choreografish VR). Conducted <strong>usability tests with surgeons</strong> on Trauma XR medical simulation. Field research at <strong>Salt Lake City ATC tower</strong> for Drone Commander (UDOT/FAA).</div></div>
+              <div class="proof-line"><div class="proof-line__where">Cross</div><div>Adapted testing approach from <strong>rapid internal gameplay sessions with same-day turnaround</strong> (Tomb Raider, King of Meat) to <strong>structured multi-week UXR studies</strong> with specialized participant populations (Choreografish, Trauma XR), building custom feedback tooling when sessions scaled beyond manual note-taking (Battlefield Mobile).</div></div>
+            </div>
+          </div>
+          <button class="cap__expand" onclick="toggleCap(this)"><span class="chev">›</span><span class="lbl">Detail</span></button>
+          <div class="cap__deep"><div><div class="cap__deep-inner">
+            <h4>How I Research</h4>
+            <ul>
+              <li><strong>Tomb Raider (Amazon Games):</strong> Evaluated weapon balance across sandbox and main game levels, isolating individual weapon variables in sandbox and validating against real encounter conditions in-game. Documented detailed qualitative notes in milestone reports starting from feature prototype phase. Design team used these to iterate on feel, damage tuning, and encounter pacing before each gate review.</li>
+              <li><strong>Battlefield Mobile (EA):</strong> Designed questionnaires focused on what tripped players up in their first session. Built a Slack plugin to capture unstructured feedback from 30–40 person weekly sessions at scale. Turned raw feedback into categorized items production could act on during sprint planning. Longitudinal playtest participants provided retention and difficulty data over extended play periods.</li>
+              <li><strong>King of Meat (Amazon Games):</strong> Used root cause analysis on progression file data to trace corrupt build issues back to stale data in configuration files, a problem that had persisted for 5–6 weeks. Cross-referenced telemetry anomalies against file version history to isolate the source.</li>
+              <li><strong>Battlefield Mobile (EA):</strong> Mapped the full FTUE funnel from first launch to Lvl 50. Compared where the design intended players to be against where they actually were in the data. Identified where unlocks, rewards, and difficulty spikes caused drop-offs, then worked with PM and design to restructure the early progression curve.</li>
+              <li><strong>Formal methods training (GApp Lab):</strong> Applied surveys, focus groups, think-aloud protocols, structured observation, and field research across 3 projects with real participants (50+ playtests with young adults on the autism spectrum, usability tests with surgeons, ATC tower field research).</li>
+            </ul>
+            <h4>Cultural &amp; Accessibility Insights</h4>
+            <ul>
+              <li>Directed <strong>South Asian cultural nuance feedback</strong> to Tomb Raider content team, guiding authentic cultural representation and surfacing inconsistencies, stereotyping, and clichéd interactions to avoid community backlash and protect player sentiment.</li>
+              <li>Surfaced accessibility, cultural, and UX risks via focused playtests, turning observations into prioritized design recommendations.</li>
+            </ul>
+          </div></div></div>
+        </div>
+
+        <div class="cap reveal">
+          <div class="cap__top">
+            <h3>Competitive Gameplay Analysis</h3>
+            <div class="cap__sub">Benchmark player experience across titles, identify opportunities for differentiation.</div>
+            <div class="cap__proof">
+              <div class="proof-line"><div class="proof-line__where">EA</div><div>Led the <strong>Rules of Survival post-mortem report</strong> for Product Management: analyzed gameplay systems, monetization, engagement loops, player sentiment, content creator dynamics, and competitive landscape (PUBG Mobile, Free Fire, CoD Mobile). Delivered <strong>23-page analysis with strategic recommendations</strong> for Battlefield Mobile.</div></div>
+              <div class="proof-line"><div class="proof-line__where">Amazon Games</div><div>Conducted <strong>competitive gameplay analysis across multiple MMO, platformer, and open-world titles</strong>. Turned gameplay observations into benchmarks that the QA team used to sharpen their exploratory testing, especially around gameplay depth, complexity, and what the core player base actually expects.</div></div>
+              <div class="proof-line"><div class="proof-line__where">EA</div><div>Performed <strong>game balance and user experience analysis</strong> on C&amp;C: Rivals, evaluating feature scope, complexity, likelihood, and player impact to inform design decisions.</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cap reveal">
+          <div class="cap__top">
+            <h3>Player Behavior &amp; Analytics</h3>
+            <div class="cap__sub">Identify patterns in player behavior, quantify impact, feed insights back into product decisions.</div>
+            <div class="cap__proof">
+              <div class="proof-line"><div class="proof-line__where">EA</div><div>Drove <strong>FTUE funnel player flow and balance analysis</strong> on Battlefield Mobile, collaborating with PM, level design, and game design teams. Reports drove <strong>multiple significant changes to the FTUE funnel</strong>, improving completion rate by ~12%.</div></div>
+              <div class="proof-line"><div class="proof-line__where">Amazon Games</div><div>Identified critical <strong>stale data issues using root cause analysis</strong> in King of Meat progression files, resolving corrupt build issues that had persisted for 5–6 weeks, resulting in <strong>cleaner deployments and unblocking multiple teams</strong>.</div></div>
+              <div class="proof-line"><div class="proof-line__where">Amazon Games</div><div>Partnered with BI Engineers and Data Analysts to <strong>define telemetry events, validate data accuracy</strong>, and build dashboards (QuickSight, Tableau) visualizing player behavior, stability, and engagement metrics across 5 concurrent titles.</div></div>
+              <div class="proof-line"><div class="proof-line__where">EA</div><div>Built <strong>Power BI dashboards</strong> with DAX expressions visualizing gameplay patterns (weapon/gadget usage, movement heatmaps, matchmaking), crash analytics by device/OS, and player engagement KPIs that leadership used for <strong>milestone decisions</strong>.</div></div>
+              <div class="proof-line"><div class="proof-line__where">EA</div><div>Created <strong>FTUE funnel and AERM</strong> (Acquisition, Engagement, Retention, Monetization) reports from telemetry data for Product Management, helping categorize player funnel signals and identify data inconsistencies.</div></div>
+            </div>
+          </div>
+          <button class="cap__expand" onclick="toggleCap(this)"><span class="chev">›</span><span class="lbl">Detail</span></button>
+          <div class="cap__deep"><div><div class="cap__deep-inner">
+            <h4>Depth</h4>
+            <ul>
+              <li>Analyzed telemetry trends and anomalies to identify player behavior patterns, quantify player impact, and feed insights back into prioritization of high-risk gameplay areas.</li>
+              <li>Created reusable telemetry framework documentation defining quality workflows, metrics, and dashboard patterns.</li>
+              <li>Enabled and upskilled teams on telemetry usage and dashboard interpretation.</li>
+              <li>Developed GenAI solutions using AWS PartyRock and Amazon Bedrock to automate data extraction and apply objective markers to triage decisions.</li>
+            </ul>
+            <div style="margin-top:14px">
+              <span class="etag">Amazon QuickSight</span><span class="etag">Tableau</span><span class="etag">Power BI</span><span class="etag">DAX</span><span class="etag">JIRA/JQL</span><span class="etag">Firebase Crashlytics</span>
+            </div>
+          </div></div></div>
+        </div>
+
+        <div class="cap reveal">
+          <div class="cap__top">
+            <h3>Cross-Functional Influence</h3>
+            <div class="cap__sub">Partner with designers, PMs, and development teams to shape decisions through player-centric insights.</div>
+            <div class="cap__proof">
+              <div class="proof-line"><div class="proof-line__where">Amazon Games</div><div>Directed <strong>cultural nuance feedback to Tomb Raider content team</strong>, guiding game design to capture cultural elements authentically and avoid risk of community backlash by surfacing inconsistencies, stereotyping, and clichéd interactions. Synthesized playtest findings and telemetry into <strong>Milestone Acceptance Reports driving leadership decisions</strong> across 5 titles.</div></div>
+              <div class="proof-line"><div class="proof-line__where">EA</div><div>Partnered with UXR and PM teams to <strong>define target players, demographics, pain points</strong>. Playtest findings directly influenced design iteration and feature prioritization. Partnered with Live QV team to turn raw player data into <strong>concrete recommendations the development team could act on</strong>.</div></div>
+              <div class="proof-line"><div class="proof-line__where">GApp Lab</div><div>Collaborated with <strong>surgeons, UDOT/FAA, autism organizations, Berklee College of Music</strong> across 3 concurrent projects, turning participant feedback into design changes and keeping external partners aligned on scope and direction.</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cap reveal">
+          <div class="cap__top">
+            <h3>Vendor &amp; Research Partners</h3>
+            <div class="cap__sub">Define scope, ensure quality and consistency of outputs across internal and external partners.</div>
+            <div class="cap__proof">
+              <div class="proof-line"><div class="proof-line__where">Amazon Games</div><div>Managed <strong>10–15 vendor test engineers across multiple external studios</strong> on Tomb Raider. Defined scope, coverage priorities, acceptance criteria. Maintained quality standards and <strong>consistency of outputs across internal and external testing</strong>.</div></div>
+              <div class="proof-line"><div class="proof-line__where">EA</div><div>Coordinated with <strong>external QV teams</strong> on usability testing, persona testing, and functional testing. Designed test plans and managed test case repository for external partners.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider-label">Quality Engineering Foundation</div>
+
+      <div class="cap-grid">
+        <div class="cap reveal">
+          <div class="cap__top">
+            <h3>Quality Strategy &amp; Advocacy</h3>
+            <div class="cap__sub">Define what quality means for the game, then make sure the team stays honest about it.</div>
+            <div class="cap__proof">
+              <div class="proof-line"><div class="proof-line__where">Amazon Games</div><div>Owned <strong>quality strategy and process</strong> across 5 concurrent titles: defined coverage priorities, acceptance criteria, and release gates. Built <strong>Quality Readiness and Milestone Acceptance frameworks from scratch</strong> on King of Meat, adopted across AGS teams.</div></div>
+              <div class="proof-line"><div class="proof-line__where">EA</div><div>Implemented <strong>shift-left approach</strong> on Battlefield Mobile, embedding player-focused risk evaluation at feature design phase. Defined Quality Stage Definition criteria establishing clear quality gates.</div></div>
+              <div class="proof-line"><div class="proof-line__where">Cross</div><div>Recommended milestone fail when data showed deliverables missed criteria. Presented the evidence, specific criteria not met, and risk of proceeding. <strong>Let the data do the arguing.</strong></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cap reveal">
+          <div class="cap__top">
+            <h3>Automation &amp; Tooling</h3>
+            <div class="cap__sub">Partner with SDETs to identify what to automate, evaluate ROI, free up the team for the work that actually needs human judgment.</div>
+            <div class="cap__proof">
+              <div class="proof-line"><div class="proof-line__where">Amazon Games</div><div>Partner with SDETs to enhance <strong>Python-based automation frameworks</strong>, freeing team capacity for exploratory testing and player-focused analysis.</div></div>
+              <div class="proof-line"><div class="proof-line__where">EA</div><div>Co-designed automation strategy integrated into <strong>Jenkins CI/CD pipeline</strong>. Built custom <strong>Slack feedback plugin</strong> for playtests. Designed Automation and Game Health telemetry frameworks.</div></div>
+              <div class="proof-line"><div class="proof-line__where">EA</div><div>Built Python automation scripts improving efficiency by <strong>~66 hours per tester per month</strong>.</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cap reveal">
+          <div class="cap__top">
+            <h3>Tech &amp; Platforms</h3>
+            <div class="cap__sub">Multi-platform experience across the full stack.</div>
+            <div class="cap__proof">
+              <div class="proof-line"><div class="proof-line__where">Platforms</div><div><strong>PC</strong> (Steam) · <strong>Console</strong> (PlayStation, Xbox, first-party cert) · <strong>Mobile</strong> (iOS, Android) · <strong>Cloud</strong> (Amazon Luna) · <strong>VR</strong> (Oculus Quest, HTC Vive) · <strong>Web</strong> (Prime Gaming, e-commerce).</div></div>
+              <div class="proof-line"><div class="proof-line__where">Amazon Games</div><div>Validated <strong>AWS infrastructure</strong> (Lambda, API Gateway, CloudWatch, SNS, Cognito). Coordinated server merges for Lost Ark. Accessibility and PII data privacy validation.</div></div>
+              <div class="proof-line"><div class="proof-line__where">Amazon Games</div><div>Quality validation on <strong>Amazon Luna cloud platform</strong> across multiple titles, testing gameplay and feature parity alongside PC, console, and mobile builds.</div></div>
+            </div>
+          </div>
+          <button class="cap__expand" onclick="toggleCap(this)"><span class="chev">›</span><span class="lbl">Detail</span></button>
+          <div class="cap__deep"><div><div class="cap__deep-inner">
+            <div style="margin-top:4px">
+              <span class="etag">JIRA/JQL</span><span class="etag">TestRail</span><span class="etag">Confluence</span><span class="etag">Postman</span><span class="etag">Charles Proxy</span><span class="etag">Jenkins</span><span class="etag">Perforce</span><span class="etag">Android Studio</span><span class="etag">Xcode</span><span class="etag">UE5</span><span class="etag">Unity</span><span class="etag">Miro</span><span class="etag">Python</span>
+            </div>
+          </div></div></div>
+        </div>
+      </div>
+
+      <!-- Work Samples -->
+      <div class="samples reveal">
+        <div class="samples__hdr">
+          <div>
+            <div class="eyebrow" style="margin-bottom:6px">Work Samples</div>
+            <div class="samples__title">Player Research Methods &amp; Player Analysis</div>
+          </div>
+          <div class="samples__sub">Playbooks · Research methods · Competitive analysis</div>
+        </div>
+
+        <div class="carousel" id="wsCarousel">
+          <button class="carousel__btn prev" onclick="moveWS(-1)" aria-label="Previous">‹</button>
+          <div class="carousel__track" id="wsTrack">
+            <div class="carousel__slide"><div class="ph-slide"><div class="ph-slide__idx">01 · Framework</div><div><div class="ph-slide__title">Gameplay Quality Principles</div><div class="ph-slide__tag">4-pillar framework: Quality Grading · Survey Pool · Competitive Analysis · Feedback Loop</div></div></div></div>
+            <div class="carousel__slide"><div class="ph-slide"><div class="ph-slide__idx">02 · Methodology <span class="wip" style="background:var(--paper-2);color:var(--ink-3);border-color:var(--rule)">WIP</span></div><div><div class="ph-slide__title">Methodology across the Game Development Framework</div><div class="ph-slide__tag">Research &amp; analysis tasks mapped across Ideation, Development, Release, Live Service</div></div></div></div>
+            <div class="carousel__slide"><div class="ph-slide"><div class="ph-slide__idx">03 · Player Journey <span class="wip" style="background:var(--paper-2);color:var(--ink-3);border-color:var(--rule)">WIP</span></div><div><div class="ph-slide__title">Player Experience Playbook: Player Journeys</div><div class="ph-slide__tag">FIFA 18 and Madden 18 install match journey maps with engagement curves</div></div></div></div>
+            <div class="carousel__slide"><div class="ph-slide"><div class="ph-slide__idx">04 · Framework <span class="wip" style="background:var(--paper-2);color:var(--ink-3);border-color:var(--rule)">WIP</span></div><div><div class="ph-slide__title">Player Journey Framework</div><div class="ph-slide__tag">8-component: Who · What · Phases · Doing · Thinking · Feeling · Opportunities · Ownership</div></div></div></div>
+            <div class="carousel__slide"><div class="ph-slide"><div class="ph-slide__idx">05 · Segmentation <span class="wip" style="background:var(--paper-2);color:var(--ink-3);border-color:var(--rule)">WIP</span></div><div><div class="ph-slide__title">Player Segmentation Methodology</div><div class="ph-slide__tag">Player Behavior to Cohorts: User-level Analysis · Lifecycle Targeting · Recommendations</div></div></div></div>
+            <div class="carousel__slide"><div class="ph-slide"><div class="ph-slide__idx">06 · Onboarding <span class="wip" style="background:var(--paper-2);color:var(--ink-3);border-color:var(--rule)">WIP</span></div><div><div class="ph-slide__title">Onboarding Design Methodology</div><div class="ph-slide__tag">Player Lens · Outcomes · Journey Map · Sketch · Prototype · Test+Iterate · Measure</div></div></div></div>
+          </div>
+          <button class="carousel__btn next" onclick="moveWS(1)" aria-label="Next">›</button>
+        </div>
+        <div class="carousel__dots" id="wsNav">
+          <button class="carousel__dot is-active" onclick="goWS(0)" aria-label="Slide 1"></button>
+          <button class="carousel__dot" onclick="goWS(1)" aria-label="Slide 2"></button>
+          <button class="carousel__dot" onclick="goWS(2)" aria-label="Slide 3"></button>
+          <button class="carousel__dot" onclick="goWS(3)" aria-label="Slide 4"></button>
+          <button class="carousel__dot" onclick="goWS(4)" aria-label="Slide 5"></button>
+          <button class="carousel__dot" onclick="goWS(5)" aria-label="Slide 6"></button>
+        </div>
+
+        <!-- PM Report -->
+        <div class="pm-report reveal" id="pmReport">
+          <button class="pm-report__btn" onclick="togglePM()">
+            <div class="pm-report__tag">Battlefield Mobile · EA · Competitive analysis</div>
+            <div class="pm-report__title">Mobile Shooter Post-Mortem — Rules of Survival</div>
+            <div class="pm-report__hook">Why a first-mover mobile Battle Royale lost market share to PUBG Mobile, Free Fire, and Call of Duty: Mobile. 23-slide competitive report synthesizing market data, player sentiment, content creator dynamics, monetization, and feature analysis with applied recommendations for EA Mobile shooter strategy.</div>
+            <div class="pm-report__cta" id="pmReportCta">View full report <span style="display:inline-block;transition:transform .2s">↓</span></div>
+          </button>
+          <div class="pm-report__body"><div><div class="pm-report__body-inner">
+            <iframe src="PM_Report_Work_Sample.pdf" title="Mobile Shooter Post-Mortem" loading="lazy"></iframe>
+            <div style="text-align:center; margin-top:10px; font-size:12.5px; color:var(--ink-3);">If the report doesn't render inline, <a style="color:var(--accent-ink);" href="PM_Report_Work_Sample.pdf" target="_blank">open the PDF in a new tab ↗</a></div>
+          </div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PILLAR: PRODUCTION -->
+    <div id="pillar-production" class="pillar">
+      <div class="cap-grid">
+        <div class="cap">
+          <div class="cap__top">
+            <h3>Sprint &amp; Milestone Planning</h3>
+            <div class="cap__sub">Translating specs into sprint-ready scope, surfacing dependencies early.</div>
+            <div class="cap__proof">
+              <div class="proof-line"><div class="proof-line__where">Amazon Games</div><div>Led requirement definition with Senior Producers and TPM for Tomb Raider, King of Meat, and Lost Ark: translated feature specs into sprint-ready scope with <strong>clear acceptance criteria, Definition of Done, Condition of Satisfaction</strong>, and defined <strong>Quality Scoring</strong>.</div></div>
+              <div class="proof-line"><div class="proof-line__where">EA</div><div>Led backlog grooming sharing producer's workload. Defined <strong>Quality Stage Definition criteria</strong> establishing acceptance gates, securing stakeholder buy-in.</div></div>
+              <div class="proof-line"><div class="proof-line__where">Squish-Fish</div><div>Ran sprint planning and milestone tracking for <strong>16-person team</strong> on ArchiTac (shipped to Steam). Managed scope, dependencies, timelines, release readiness.</div></div>
+            </div>
+          </div>
+          <button class="cap__expand" onclick="toggleCap(this)"><span class="chev">›</span><span class="lbl">Detail</span></button>
+          <div class="cap__deep"><div><div class="cap__deep-inner">
+            <h4>Depth</h4>
+            <ul>
+              <li>At GApp Lab, managed backlogs across 3 concurrent VR/PC projects, turning user study findings into backlog items.</li>
+              <li>Total War: Mahabharata (Master's): built full production schedule, P&amp;L, team structure, 3-year franchise strategy.</li>
+            </ul>
+            <div style="margin-top:10px"><span class="etag">CSM</span><span class="etag">Six Sigma Green Belt</span><span class="etag">Jira</span><span class="etag">Confluence</span></div>
+          </div></div></div>
+        </div>
+
+        <div class="cap">
+          <div class="cap__top">
+            <h3>Stakeholder Communication</h3>
+            <div class="cap__sub">The right insights to the right people at the right time.</div>
+            <div class="cap__proof">
+              <div class="proof-line"><div class="proof-line__where">Amazon Games</div><div>Created <strong>complex dashboards in JIRA, TestRail, QuickSight, and Automation portal</strong> across multiple titles so leadership could reference execution status and risk signals during go/no-go decisions. Coordinated with <strong>first-party partners (Sony, Xbox)</strong> across 4 titles.</div></div>
+              <div class="proof-line"><div class="proof-line__where">Amazon Games</div><div>Authored insight reports synthesizing playtest findings, telemetry data, and analysis into clear recommendations for <strong>8–10 stakeholders</strong> across 30+ person teams.</div></div>
+              <div class="proof-line"><div class="proof-line__where">GApp Lab</div><div>Maintained stakeholder alignment across <strong>3 concurrent projects</strong> with external partners: UDOT, FAA, surgeons, autism organizations.</div></div>
+            </div>
+          </div>
+          <button class="cap__expand" onclick="toggleCap(this)"><span class="chev">›</span><span class="lbl">Detail</span></button>
+          <div class="cap__deep"><div><div class="cap__deep-inner">
+            <h4>Depth</h4>
+            <ul>
+              <li>Created Launch Readiness documentation for King of Meat from scratch that became the adopted standard across multiple Amazon Games teams.</li>
+              <li>Coordinated across 30+ people and 8–10 stakeholders on 8–10 month timelines per title.</li>
+            </ul>
+            <div style="margin-top:10px"><span class="etag">JIRA</span><span class="etag">Confluence</span><span class="etag">QuickSight</span><span class="etag">Tableau</span><span class="etag">TestRail</span></div>
+          </div></div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== SKILLS ==================== -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-head__label">
+        <span class="eyebrow">Skills</span>
+        <span class="counter">04 / 05</span>
+      </div>
+      <div class="sec-head__body">
+        <h2 class="display-lg">Methods, systems, and tools.</h2>
+        <p class="body-lg">Evidenced in the work above, organized by the kind of problem they apply to.</p>
+      </div>
+    </div>
+
+    <div class="skills-grid reveal">
+      <div>
+        <div class="skill-group__label">Player Research &amp; Playtesting</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Gameplay test design (prototype to pre-launch)</span>
+          <span class="skill-tag">Longitudinal playtesting</span>
+          <span class="skill-tag">Usability testing</span>
+          <span class="skill-tag">Surveys &amp; questionnaires</span>
+          <span class="skill-tag">Think-aloud protocols</span>
+          <span class="skill-tag">Structured observation</span>
+          <span class="skill-tag">Focus groups</span>
+          <span class="skill-tag">Field research</span>
+          <span class="skill-tag">Comparative gameplay analysis</span>
+          <span class="skill-tag">Comparative case analysis</span>
+          <span class="skill-tag">Cultural risk analysis methodology</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-group__label">Player Behavior &amp; Analytics</div>
+        <div class="skill-tags">
+          <span class="skill-tag">FTUE funnel analysis</span>
+          <span class="skill-tag">Telemetry event design &amp; validation</span>
+          <span class="skill-tag">Root cause analysis</span>
+          <span class="skill-tag">Player segmentation</span>
+          <span class="skill-tag">Lifecycle management (LCM)</span>
+          <span class="skill-tag">Player journey mapping</span>
+          <span class="skill-tag">Engagement &amp; retention analysis</span>
+          <span class="skill-tag">Crash analytics</span>
+          <span class="skill-tag">Insight reporting</span>
+          <span class="skill-tag">Milestone Acceptance Reports</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-group__label">Gameplay Systems &amp; Methodology</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Onboarding / FTUE</span>
+          <span class="skill-tag">Controls</span>
+          <span class="skill-tag">Progression</span>
+          <span class="skill-tag">Difficulty tuning</span>
+          <span class="skill-tag">Engagement loops</span>
+          <span class="skill-tag">Weapon balance</span>
+          <span class="skill-tag">Multiplayer dynamics</span>
+          <span class="skill-tag">Live service operations</span>
+          <span class="skill-tag">Monetization loops</span>
+          <span class="skill-tag">QX Scale (Quality Experience) grading</span>
+          <span class="skill-tag">GDF phase grading</span>
+          <span class="skill-tag">Shift-left risk evaluation</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-group__label">Cross-Functional &amp; Vendor</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Cross-functional collaboration (Design, PM, UXR, Engineering, Production)</span>
+          <span class="skill-tag">Third-party QA &amp; research vendor management</span>
+          <span class="skill-tag">Methodology transfer &amp; coaching</span>
+          <span class="skill-tag">External partner alignment</span>
+          <span class="skill-tag">Cultural nuance feedback</span>
+          <span class="skill-tag">Stakeholder communication</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-group__label">BI &amp; Analytics Tools</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Amazon QuickSight</span>
+          <span class="skill-tag">Tableau</span>
+          <span class="skill-tag">Power BI / DAX</span>
+          <span class="skill-tag">Firebase Crashlytics</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-group__label">Task &amp; Defect Management</div>
+        <div class="skill-tags">
+          <span class="skill-tag">JIRA / JQL</span>
+          <span class="skill-tag">Confluence</span>
+          <span class="skill-tag">TestRail</span>
+          <span class="skill-tag">Miro</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-group__label">Engineering &amp; Cloud</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Jenkins</span>
+          <span class="skill-tag">Perforce</span>
+          <span class="skill-tag">Postman</span>
+          <span class="skill-tag">Charles Proxy</span>
+          <span class="skill-tag">AWS (Lambda, API Gateway, CloudWatch, Cognito, SNS)</span>
+          <span class="skill-tag">GenAI (PartyRock, Bedrock)</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-group__label">Engines &amp; SDKs</div>
+        <div class="skill-tags">
+          <span class="skill-tag">UE5</span>
+          <span class="skill-tag">Unity</span>
+          <span class="skill-tag">Android Studio</span>
+          <span class="skill-tag">Xcode</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-group__label">Platforms Shipped On</div>
+        <div class="skill-tags">
+          <span class="skill-tag">PC (Steam)</span>
+          <span class="skill-tag">Console (PlayStation, Xbox, first-party cert)</span>
+          <span class="skill-tag">Mobile (iOS, Android)</span>
+          <span class="skill-tag">Cloud (Amazon Luna)</span>
+          <span class="skill-tag">VR (Oculus Quest, HTC Vive)</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-group__label">Certifications</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Certified Scrum Master (CSM)</span>
+          <span class="skill-tag">Six Sigma Green Belt</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ABOUT ==================== -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-head__label">
+        <span class="eyebrow">About</span>
+        <span class="counter">05 / 05</span>
+      </div>
+      <div class="sec-head__body">
+        <h2 class="display-lg">Beyond the build.</h2>
+      </div>
+    </div>
+    <div class="about-grid reveal">
+      <div>
+        <p>A dog named Rio decides when my workdays end and my weekends start. We spend most of those weekends on trails across the Pacific Northwest, where the rain is part of the deal.</p>
+        <p>When I'm not gaming or out with him, I'm usually cutting something in DaVinci Resolve from a queue of video projects I keep telling myself I'll finish. A bit of screenwriting and indie filmmaking alongside that. Slower craft, but the kind that teaches pacing and payoff in ways that bleed back into how I think about games.</p>
+        <p>Museums and coffee shops in between. A running list of travel plans that grows faster than I can knock it down.</p>
+      </div>
+      <div class="about-photo">
+        <img src="rio.jpg" alt="Rio, a dog">
+        <span class="about-photo__caption">A quiet morning at home, before the trail.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-head__label">
+        <span class="eyebrow">Contact</span>
+      </div>
+      <div class="sec-head__body">
+        <h2 class="display-lg">Let's talk about players.</h2>
+      </div>
+    </div>
+
+    <div class="contact-grid reveal contact-grid--form-only">
+      <form class="form" action="https://formspree.io/f/xrerakoy" method="POST">
+        <div class="form-row">
+          <div class="form-group"><label>Name</label><input type="text" name="name" required placeholder="Your name"></div>
+          <div class="form-group"><label>Email</label><input type="email" name="email" required placeholder="your@email.com"></div>
+        </div>
+        <div class="form-group"><label>Message</label><textarea name="message" rows="5" required placeholder="Tell me about the role, the title, or the problem…"></textarea></div>
+        <button type="submit" class="form-submit">Send message <span>→</span></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="wrap" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; width:100%;">
+    <div>© <span id="year"></span> Sritej Canchi</div>
+    <div>Set in <a href="https://fonts.google.com/specimen/Fraunces" target="_blank" rel="noopener">Fraunces</a> &amp; <a href="https://fonts.google.com/specimen/Inter+Tight" target="_blank" rel="noopener">Inter Tight</a>.</div>
+  </div>
+</footer>
+
+<script>
+// Theme toggle
+function toggleTheme(){
+  var cur = document.documentElement.getAttribute('data-theme');
+  var next = cur === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  try { localStorage.setItem('sc-theme', next); } catch(e){}
+}
+
+// Expertise tabs
+function switchPillar(which, tab){
+  document.querySelectorAll('.pillar').forEach(p => p.classList.remove('is-active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('is-active'));
+  document.getElementById('pillar-' + which).classList.add('is-active');
+  tab.classList.add('is-active');
+}
+
+// Capability card expand
+function toggleCap(btn){
+  var cap = btn.closest('.cap');
+  cap.classList.toggle('is-open');
+  var lbl = btn.querySelector('.lbl');
+  lbl.textContent = cap.classList.contains('is-open') ? 'Hide detail' : 'Detail';
+}
+
+// PM Report expand
+function togglePM(){
+  var card = document.getElementById('pmReport');
+  card.classList.toggle('is-open');
+  var cta = document.getElementById('pmReportCta');
+  cta.innerHTML = card.classList.contains('is-open')
+    ? 'Close report <span style="display:inline-block">↑</span>'
+    : 'View full report <span style="display:inline-block">↓</span>';
+}
+
+// Work-samples carousel
+var wsSlide = 0;
+var wsTotal = 6;
+function goWS(n){
+  wsSlide = n;
+  document.getElementById('wsTrack').style.transform = 'translateX(-' + (n * 100) + '%)';
+  document.querySelectorAll('#wsNav .carousel__dot').forEach(function(d, i){ d.classList.toggle('is-active', i === n); });
+}
+function moveWS(dir){
+  var next = wsSlide + dir;
+  if (next < 0) next = wsTotal - 1;
+  if (next >= wsTotal) next = 0;
+  goWS(next);
+}
+
+// Reveal on scroll
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { els.forEach(e => e.classList.add('is-visible')); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('is-visible'); io.unobserve(e.target); }
+    });
+  }, { rootMargin: '0px 0px -80px 0px', threshold: 0.05 });
+  els.forEach(e => io.observe(e));
+})();
+
+// Section tracker — highlight active item based on which section is in view
+(function(){
+  var items = document.querySelectorAll('.tracker__item');
+  if (!items.length) return;
+  var byId = {};
+  items.forEach(function(a){ byId[a.getAttribute('data-target')] = a; });
+
+  // Observe the hero header (id="top") + every <section> with an id
+  var sections = [document.getElementById('top')].concat(
+    Array.prototype.slice.call(document.querySelectorAll('section[id]'))
+  ).filter(Boolean);
+
+  if (!('IntersectionObserver' in window)) return;
+
+  var visible = {};
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      visible[e.target.id] = e.isIntersecting ? e.intersectionRatio : 0;
+    });
+    // Pick the section with the highest visibility
+    var best = null, bestRatio = 0;
+    Object.keys(visible).forEach(function(id){
+      if (visible[id] > bestRatio) { bestRatio = visible[id]; best = id; }
+    });
+    if (!best) return;
+    items.forEach(function(a){
+      a.classList.toggle('is-active', a.getAttribute('data-target') === best);
+    });
+  }, { rootMargin: '-40% 0px -50% 0px', threshold: [0, 0.1, 0.25, 0.5, 0.75, 1] });
+
+  sections.forEach(function(s){ io.observe(s); });
+})();
+
+// Year
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
